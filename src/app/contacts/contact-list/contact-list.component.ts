@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Contacts } from '../contact.model';
 
 @Component({
   selector: 'cms-contact-list',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent {
+  contacts: Contacts[] = [
+    new Contacts("1", "R. Kent Jackson", "jacksonk@byui.edu", "208-496-3771", "../../assets/images/jacksonk.jpg"),
+    new Contacts("2", "Rex Barzee", "barzeer@byui.edu", "208-496-3768", "../../assets/images/barzeer.jpg")
+  ];
+ 
+
 
 }
